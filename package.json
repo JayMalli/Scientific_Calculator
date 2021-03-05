@@ -1,0 +1,16 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://JayMalli.githb.io/Scientific_Calculator",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
