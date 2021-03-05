@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Scientific Calculator" />
+    <meta name="description" content="A calculator with 3d button" />
+    <meta
+      name="keywords"
+      content="Scientific Calculator, calculator, calc, 3D, useful, opensource"
+    />
+    <title>Scientific Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- History button -->
+    <div class="show-history">
+      <i class="fas fa-history fa-2x"></i>
+    </div>
+    <div class="container">
+      <div class="main-grid">
+        <div class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear class="horizontal-two highlight">AC</button>
+        <!--AC button-->
+        <button data-operation class="hide" id="mod">
+          <span style="display: none"></span>%
+        </button>
+
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">e</span>e<sup>x</sup>
+        </button>
+
+        <!--EXP button-->
+        <button data-sci-operation-script class="hide"><span>)</span></button>
+        <!--Bracket button-->
+        <button data-number id="seven">7</button>
+        <button data-number id="eight">8</button>
+        <button data-number id="nine">9</button>
+        <button data-operation class="highlight" id="division">
+          <i class="fas fa-divide"><span class="zero">/</span></i>
+        </button>
+        <!--Division button-->
+
+        <button data-sci-operation-script class="hide" id="sqrt">
+          <span style="display: none">S</span
+          ><i class="fas fa-square-root-alt"></i>
+        </button>
+        <!--squareroot button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">s</span>sin
+        </button>
+        <!--sin button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">c</span>cos
+        </button>
+        <!--cos button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">t</span>tan
+        </button>
+        <!--tan button-->
+
+        <button data-number id="four">4</button>
+        <button data-number id="five">5</button>
+        <button data-number id="six">6</button>
+        <button data-operation class="highlight" id="multi">
+          <i class="fas fa-times"><span class="zero">*</span></i>
+        </button>
+        <!--Multilpy button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">F</span>n!
+        </button>
+        <!--Factorial button-->
+
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">l</span>ln
+        </button>
+        <!--ln button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">L</span>log
+        </button>
+        <!--Log button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">x</span>10<sup>x</sup>
+        </button>
+        <!--10^x button-->
+
+        <button data-number id="one">1</button>
+        <button data-number id="two">2</button>
+        <button data-number id="three">3</button>
+        <button data-operation class="highlight" id="minus">
+          <i class="fas fa-minus"><span class="zero">-</span></i>
+        </button>
+        <!--Subtract button-->
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">V</span>x<sup>2</sup>
+        </button>
+        <!--Square button-->
+
+        <button data-sci-operation-script class="hide">
+          <span style="display: none">C</span>x<sup>3</sup>
+        </button>
+        <!--Cube button-->
+
+        <button data-number-script class="hide">
+          <span style="display: none">m</span>+/-
+        </button>
+        <button data-delete>
+          <i class="fas fa-long-arrow-alt-left"> <span class="zero">D</span></i>
+        </button>
+        <!--Delete buton-->
+
+        <button data-number id="dot">.</button>
+        <button data-number>0</button>
+        <button data-operation class="highlight" id="plus">
+          <i class="fas fa-plus"><span class="zero">+</span></i>
+        </button>
+        <!--Add button-->
+
+        <button data-equals class="vertical-two highlight">
+          <i class="fas fa-equals"><span class="zero">=</span></i>
+        </button>
+      </div>
+
+      <!-- History Tab -->
+      <div class="history">
+        <div class="showdata">
+          <div>
+            <h1>History</h1>
+          </div>
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- History-delete button -->
+    <div class="clear"><i class="fas fa-trash-alt fa-2x"></i></div>
+    <!-- Histroy message -->
+    <div class="history-message">
+      <div class="message hide-message">
+        Rotate your device for Scientific mode
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
