@@ -210,11 +210,11 @@ body {
 
 @media (max-width: 900px) {
   .history {
-    top: 30%;
+    top: 20%;
     left: 1%;
-    width: 30%;
-    height: 70%;
-    transform: translateX(-600px);
+    width: 50%;
+    height: 77%;
+    transform: translateX(-150%);
     transition: 1s ease-in-out;
   }
   .container {
@@ -227,15 +227,23 @@ body {
     top: 4%;
   }
   .clear {
-    top: 35%;
-    right: 59%;
+    top: 24%;
+    right: 67%;
     transform: translateX(-600px);
     transition: 1s ease-in-out;
+  }
+  
+   .main-grid {
+    left: 5%;
+    width: 90%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0.8rem;
   }
 
   .history.show,
   .clear.show {
-    transform: translateX(-300px);
+    transform: translateX(0%);
   }
 
   .main-grid {
